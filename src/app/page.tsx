@@ -14,7 +14,7 @@ const GET_ROCKETS = graphql(
 );
 
 export default function Home() {
-  const { data, loading, error } = useQuery(GET_ROCKETS);
+  useQuery(GET_ROCKETS);
 
   return <div>hi</div>;
 }
